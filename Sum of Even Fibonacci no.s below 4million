@@ -1,0 +1,23 @@
+def fibonacci(n):
+    r1 = 1
+    r2 = 2
+    l = [r1, r2]
+    for u in range(n):
+        q = r1+r2
+        r1 = r2
+        r2 = q
+        l.append(q)
+     
+     return l
+
+def evenlist(l):
+    w = []
+    for o in l:
+        if o%2==0:
+            w.append(o)
+     
+     return w
+     
+y = fibaonacci(31)
+p = evenlist(y)
+print(sum(p))
