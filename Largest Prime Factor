@@ -1,0 +1,27 @@
+#takes in a number and produces a list of prime factors
+def primefactors(x):
+    l = []
+    for i in range(1,int(x**0.5)+1):
+        if x%i==0
+            l.append(i)
+            
+    return prime(l)
+#takes in a list of factors and returns a list of primes 
+ def prime(l):
+    p = []
+    for i in l:
+        if i>1:
+            for j in range(2,int(i**0.5)+1):
+                if j%i == 0:
+                    break
+            else:
+                p.append(i)
+     
+     return p
+     
+
+#driving code
+o = primeactors(int(input("Enter an integer:")))
+print(o)
+
+print(f'The largest prime factor is :{max(o)}')
