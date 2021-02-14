@@ -1,0 +1,12 @@
+o = []
+for i in range(100,1000):
+    for j in range(100,1000):
+        r = str(i*j)
+        l = r[::-1]
+        if l==r:
+            o.append(i*j)
+        
+u = set(o)
+p = list(u)
+g = sorted(p)
+print(max(g))
